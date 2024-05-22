@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body{
+            color: white;
+            background-image: url('back.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        h1{
+            text-align: center;
+            font-family: "Lucida Calligraphy";
+            font-size: 46px;
+        }
+        .H{
+            color: aquamarine;
+        }
+        h2{
+            font-size: 36px;
+            font-family: "Monotype Corsiva";
+        }
+        p{
+            font-family: "Gabriola";
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .head{
+            text-align: justify;
+            font-weight: bold;
+            margin: 0%;
+            border: 0%;
+            font-size: large;
+        }
+        .link-5{
+            text-align: center;
+            font-weight: bold;
+            margin: 0%;
+            border: 0%;
+        }
+        .link{
+            color: white;
+            background-color: orange;
+            border: 0%;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 0%;
+            font-size: 20px;
+            font-family: "Century Schoolbook";
+            font-weight: bold;
+        }
+        @media (max-width: 1800px) and (min-width: 800px){
+            .body{
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+            body{
+                text-align: center;
+            }
+            .head{
+                display: flex;
+                flex-direction: row;
+                flex-shrink: 1;
+                flex-grow: 1;
+                font-size: 24px;
+            }
+            .picture{
+                height: 300px;
+                width: 300px;
+                text-align: center;
+            }
+            .next{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+            .next-2{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+        }
+        @media (max-width: 800px){
+            .body{
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+            body{
+                text-align: center;
+            }
+            .pic{
+                text-align: center;
+                border-radius: 50%;
+            }
+            img{
+                height: 200px;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Profile</h1>
+    <hr />
+    <h2 class="H">Web Developer || Software Developer</h2>
+    <h2>Hello everyone !</h2>
+    <div class="head">
+        <div class="pic">
+            <a><img src="./Bharath.png" height="300px" width="300px" alt="Bharath's Photo"/></a>
+        </div>
+        <p>I myself am M. Bharath and I'm delighted to have this opportunity to introduce myself. Now you are looking my Profile.
+            I was born on 09 May 2004 and currently residing in India. 
+            I am graduating in Computer Science Engineering from IIIT Pune, where I developed a strong foundation about Computers.<br>
+            Professionally, I worked as a Intern at Samasra a Software Development Company. 
+            I completed the course of Full Stack Web-Developer in Udemy application.
+            My role allows me to leverage my skills in software development. I take great pride in contributing to creation of some websites. 
+            I created a website Task Management which helps us to maintain our daily task without any troubles.<br>
+            Outside of my professional life, I have a deep passion in watching entertainment and playing video games. 
+            Whether it's a Movie, a Web-series, or a animation, I find these activities incredibly fulfilling and a great way to balance my work-life routine. 
+            I also enjoy other Activities like traveling, reading, listening to music, which have broadened my perspective and enriched my life experiences.
+            I am an avid learner, always eager to expand my knowledge and take on new challenges.<br> 
+            Recently, I've been exploring , which has been both exciting and rewarding. 
+            I believe in continuous growth and strive to better myself both personally and professionally.
+            I am enthusiastic about meeting new people, sharing ideas, and collaborating on meaningful projects. 
+            I look forward to the opportunities that lie ahead and am excited to see where this journey takes me.<br>
+            Thank you for taking the time to get to know me. I hope to connect with you soon!
+        </p>
+    </div>
+    <br>
+    <div class="next">
+        <h2>You want to know more about Me : </h2>
+        <a class="picture" href="./about me.html"><img src="./about me.png" height="300px" width="350px" alt="About Bharath"/></a>
+    </div>
+    <br>
+    <div class="next-2">
+        <h2>Know more about my Professions :</h2>
+        <a class="picture" href="./Pro.html"><img src="./Professional.jpeg" height="300px" width="350px" alt="My Professional life." /></a>
+    </div>
+    <hr />
+    <h2>Contact Details : </h2>
+    <div class="link-5">
+        <a href="./contact.html"><Button class="link">My Contact</Button></a>
+    </div>
+</body>
+</html>
