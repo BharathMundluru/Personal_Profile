@@ -41,52 +41,95 @@
       font-size: 26px;
       font-family: "Monotype Corsiva";
     }
+    h3{
+      font-size: 38px;
+      font-family: "STLiti";
+      font-weight: 500;
+    }
     p{
-      font-size: 24px;
+      font-size: 26px;
       font-family: "Gabriola";
       font-weight: bold;
     }
+    .contact{
+      display: flex;
+      flex-direction: row;
+    }
+    @media (max-width : 800px){
+      .contact{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        flex-grow: 1;
+        font-size: 24px;
+      }
+    }
     .mail{
-      text-align: center;
-      font-size: 24px;
+      display: block;
+      width: 50%;
+      padding: 70px 50px;
+    }
+    .message{
+      display: block;
+      padding: 60px 10px;
+    }
+    .first{
+      font-size: 20px;
+      font-family: "Lucida Calligraphy";
+    }
+    .box{
+      width: 200px;
+      height: 20px;
+    }
+    .box-1{
+      width: 600px;
+      height: 100px;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
   <h1>My Contact</h1>
   <hr />
-  <h2>Cell : +91 8639431648</h2>
-  <h2>Email : bharathmundluru@gmail.com</h2>
-  <h2>You can mail me with :</h2>
-  <div class="mail">
-    <a href="mailto:bharathmundluru@gmail.com" target="_blank"><button class="link">Mail Me</button></a>
+  <div class="contact">
+    <div class="mail">
+      <p >
+        Have any doubts about Me? 
+        Feel free to message Me by filling this form .<br>
+        Hope I could be of any help for you people .
+      </p>
+      <h2>Email : bharathmundluru@gmail.com</h2>
+      <h2>You can mail me with :</h2>
+      <a href="mailto:bharathmundluru@gmail.com" target="_blank"><button class="link">Mail Me</button></a>
+      <h2>Instagram id : bharath_5623a</h2>  
+      <br>
+      <h2>My College Address :</h2>
+      <address class="add">
+        Near Singhad Law College <br />
+        Ambegaon Budruk,<br />
+        Pincode : 411041<br /> 
+        Pune, Maharashtra <br />
+        India <br />
+      </address>
+      <br/>
+      <div class="link-5">
+        <a href="https://maps.app.goo.gl/e2GBZfFBDAy7u8ic9" target="_blank"><button class="link">Google map link</button></a>
+      </div>
+    </div>
+    <div class="message">
+      <h3>Name (required) :</h3>
+      <label class="first" for="FirstName">First Name :</label>
+      <input type="text" class="box" id="FirstName" placeholder="Enter the First name..."><br>
+      <br>
+      <label class="first" for="LastName">Last Name :</label>
+      <input type="text" class="box" id="LastName" placeholder="Enter the Last name...">
+      <h3> Mail (required) :</h3>
+      <label class="first" for="Mail">Mail id :</label>
+      <input type="text" class="box" id="Mail" placeholder="Enter the Mail id...">
+      <h3> Message :</h3>
+      <label class="first" for="Message"></label>
+      <input type="text" class="box-1" id="Message" placeholder="Enter the Message...">
+    </div>
   </div>
-  <h2>Instagram id : bharath_5623a</h2>
-  <h2>My House Address :</h2>
-  <address class="add">
-    1/25 Mittakammapalli,<br />
-    Pullampeta Mandal<br />
-    Pincode : 516107<br />
-    Kadapa, Andhra Pradesh<br />
-    India <br />
-  </address>
-  <br />
-  <div class="link-5">
-    <a href="https://maps.app.goo.gl/5Gm215qp6r75hzAW9" target="_blank"><button class="link">Google map link</button></a>
-  </div>
-  <br />
-  <h2>My College Address :</h2>
-  <address class="add">
-    Near Singhad Law College <br />
-    Ambegaon Budruk,<br />
-    Pincode : 411041<br /> 
-    Pune, Maharashtra <br />
-    India <br />
-  </address>
-  <br/>
-  <div class="link-5">
-    <a href="https://maps.app.goo.gl/e2GBZfFBDAy7u8ic9" target="_blank"><button class="link">Google map link</button></a>
-  </div>
-  <br />
 </body>
 </html>
